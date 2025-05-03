@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/football#"
+  xml:base="http://www.example.org/football"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <owl:Ontology rdf:about="http://www.example.org/football" />
+
+  <!-- Classes -->
+  <owl:Class rdf:about="#FootballTeam" />
+  <owl:Class rdf:about="#Player" />
+  <owl:Class rdf:about="#Coach" />
+  <owl:Class rdf:about="#Stadium" />
+  <owl:Class rdf:about="#Position" />
+  <owl:Class rdf:about="#Match" />
+  <owl:Class rdf:about="#Referee" />
+
+  <!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="#hasPlayer">
+    <rdfs:domain rdf:resource="#FootballTeam" />
+    <rdfs:range rdf:resource="#Player" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasCoach">
+    <rdfs:domain rdf:resource="#FootballTeam" />
+    <rdfs:range rdf:resource="#Coach" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#playsIn">
+    <rdfs:domain rdf:resource="#FootballTeam" />
+    <rdfs:range rdf:resource="#Stadium" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#playsMatch">
+    <rdfs:domain rdf:resource="#FootballTeam" />
+    <rdfs:range rdf:resource="#Match" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasReferee">
+    <rdfs:domain rdf:resource="#Match" />
+    <rdfs:range rdf:resource="#Referee" />
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="#hasPosition">
+    <rdfs:domain rdf:resource="#Player" />
+    <rdfs:range rdf:resource="#Position" />
+  </owl:ObjectProperty>
+
+  <!-- Data Properties -->
+  <owl:DatatypeProperty rdf:about="#teamName">
+    <rdfs:domain rdf:resource="#FootballTeam" />
+    <rdfs:range rdf:resource="xsd:string" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#playerName">
+    <rdfs:domain rdf:resource="#Player" />
+    <rdfs:range rdf:resource="xsd:string" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#playerAge">
+    <rdfs:domain rdf:resource="#Player" />
+    <rdfs:range rdf:resource="xsd:integer" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#coachName">
+    <rdfs:domain rdf:resource="#Coach" />
+    <rdfs:range rdf:resource="xsd:string" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#stadiumName">
+    <rdfs:domain rdf:resource="#Stadium" />
+    <rdfs:range rdf:resource="xsd:string" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="#matchDate">
+    <rdfs:domain rdf:resource="#Match" />
+    <rdfs:range rdf:resource="xsd:date" />
+  </owl:DatatypeProperty>
+
+  <!-- Individuals -->
+  <owl:NamedIndividual rdf:about="#LiverpoolFC">
+    <rdf:type rdf:resource="#FootballTeam" />
+    <teamName rdf:datatype="xsd:string">Liverpool FC</teamName>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#MohamedSalah">
+    <rdf:type rdf:resource="#Player" />
+    <playerName rdf:datatype="xsd:string">Mohamed Salah</playerName>
+    <playerAge rdf:datatype="xsd:integer">31</playerAge>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#JurgenKlopp">
+    <rdf:type rdf:resource="#Coach" />
+    <coachName rdf:datatype="xsd:string">Jurgen Klopp</coachName>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#Anfield">
+    <rdf:type rdf:resource="#Stadium" />
+    <stadiumName rdf:datatype="xsd:string">Anfield</stadiumName>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#Forward">
+    <rdf:type rdf:resource="#Position" />
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#Match1">
+    <rdf:type rdf:resource="#Match" />
+    <matchDate rdf:datatype="xsd:date">2025-05-03</matchDate>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#RefereeMikeDean">
+    <rdf:type rdf:resource="#Referee" />
+  </owl:NamedIndividual>
+
+  <!-- Relationships -->
+  <rdf:Description rdf:about="#LiverpoolFC">
+    <hasPlayer rdf:resource="#MohamedSalah" />
+    <hasCoach rdf:resource="#JurgenKlopp" />
+    <playsIn rdf:resource="#Anfield" />
+    <playsMatch rdf:resource="#Match1" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#MohamedSalah">
+    <hasPosition rdf:resource="#Forward" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#Match1">
+    <hasReferee rdf:resource="#RefereeMikeDean" />
+  </rdf:Description>
+
+  <!-- Restrictions / Rules -->
+  <owl:Class rdf:about="#FootballTeam">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#hasPlayer" />
+        <owl:minCardinality rdf:datatype="xsd:nonNegativeInteger">1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Player">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#hasPosition" />
+        <owl:cardinality rdf:datatype="xsd:nonNegativeInteger">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+</rdf:RDF>
