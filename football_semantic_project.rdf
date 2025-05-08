@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#coaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#coaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Coach"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasCoach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasCoach">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Coach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasPlayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasPlayer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasReferee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasReferee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Referee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hosts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Stadium"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Stadium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsMatch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Coach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Coach"/>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match"/>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Referee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Referee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Stadium"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Anfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Anfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Stadium"/>
+        <untitled-ontology-3:hosts rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Forward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Forward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#JurgenKlopp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#JurgenKlopp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Coach"/>
+        <untitled-ontology-3:coaches rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#LiverpoolFC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#LiverpoolFC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#LiverpoolFC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+        <untitled-ontology-3:hasCoach rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#JurgenKlopp"/>
+        <untitled-ontology-3:hasPlayer rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#MohamedSalah"/>
+        <untitled-ontology-3:playsIn rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Anfield"/>
+        <untitled-ontology-3:playsMatch rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match"/>
+        <untitled-ontology-3:hasReferee rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#RefereeMikeDean"/>
+        <untitled-ontology-3:hosts rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Anfield"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#MohamedSalah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#MohamedSalah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+        <untitled-ontology-3:hasPosition rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Forward"/>
+        <untitled-ontology-3:playsFor rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#LiverpoolFC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#RefereeMikeDean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#RefereeMikeDean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Referee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/pos">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasPosition"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/pos"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hasPlayer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#FootballTeam"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsFor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsIn"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/s"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsIn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#Stadium"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#hosts"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsMatch"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/m"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3#playsIn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/helal007/ontologies/2025/4/untitled-ontology-3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
