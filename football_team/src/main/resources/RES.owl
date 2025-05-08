@@ -105,6 +105,18 @@
     <rdf:type rdf:resource="#Position" />
   </owl:NamedIndividual>
 
+  <owl:NamedIndividual rdf:about="#Defender">
+    <rdf:type rdf:resource="#Position" />
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#Midfielder">
+    <rdf:type rdf:resource="#Position" />
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#Goalkeeper">
+    <rdf:type rdf:resource="#Position" />
+  </owl:NamedIndividual>
+
   <owl:NamedIndividual rdf:about="#Match1">
     <rdf:type rdf:resource="#Match" />
     <matchDate rdf:datatype="xsd:date">2025-05-03</matchDate>
@@ -114,9 +126,44 @@
     <rdf:type rdf:resource="#Referee" />
   </owl:NamedIndividual>
 
+  <owl:NamedIndividual rdf:about="#SadioMane">
+    <rdf:type rdf:resource="#Player" />
+    <playerName rdf:datatype="xsd:string">Sadio Mane</playerName>
+    <playerAge rdf:datatype="xsd:integer">32</playerAge>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#VirgilVanDijk">
+    <rdf:type rdf:resource="#Player" />
+    <playerName rdf:datatype="xsd:string">Virgil van Dijk</playerName>
+    <playerAge rdf:datatype="xsd:integer">32</playerAge>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#AlissonBecker">
+    <rdf:type rdf:resource="#Player" />
+    <playerName rdf:datatype="xsd:string">Alisson Becker</playerName>
+    <playerAge rdf:datatype="xsd:integer">31</playerAge>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#TrentAlexanderArnold">
+    <rdf:type rdf:resource="#Player" />
+    <playerName rdf:datatype="xsd:string">Trent Alexander-Arnold</playerName>
+    <playerAge rdf:datatype="xsd:integer">25</playerAge>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="#Fabinho">
+    <rdf:type rdf:resource="#Player" />
+    <playerName rdf:datatype="xsd:string">Fabinho</playerName>
+    <playerAge rdf:datatype="xsd:integer">30</playerAge>
+  </owl:NamedIndividual>
+
   <!-- Relationships -->
   <rdf:Description rdf:about="#LiverpoolFC">
     <hasPlayer rdf:resource="#MohamedSalah" />
+    <hasPlayer rdf:resource="#SadioMane" />
+    <hasPlayer rdf:resource="#VirgilVanDijk" />
+    <hasPlayer rdf:resource="#AlissonBecker" />
+    <hasPlayer rdf:resource="#TrentAlexanderArnold" />
+    <hasPlayer rdf:resource="#Fabinho" />
     <hasCoach rdf:resource="#JurgenKlopp" />
     <playsIn rdf:resource="#Anfield" />
     <playsMatch rdf:resource="#Match1" />
@@ -124,6 +171,26 @@
 
   <rdf:Description rdf:about="#MohamedSalah">
     <hasPosition rdf:resource="#Forward" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#SadioMane">
+    <hasPosition rdf:resource="#Forward" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#VirgilVanDijk">
+    <hasPosition rdf:resource="#Defender" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#AlissonBecker">
+    <hasPosition rdf:resource="#Goalkeeper" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#TrentAlexanderArnold">
+    <hasPosition rdf:resource="#Defender" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="#Fabinho">
+    <hasPosition rdf:resource="#Midfielder" />
   </rdf:Description>
 
   <rdf:Description rdf:about="#Match1">
