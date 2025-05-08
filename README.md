@@ -49,10 +49,10 @@ Here's an explanation of the key files in this project:
     *   Check the logical consistency of the ontology.
 
 *   **`football_team/src/main/resources/RES.owl`**: This is the OWL (Web Ontology Language) file that contains the actual ontology for the football team domain. It defines:
-    *   **Classes**: General concepts or categories (e.g., Player, Team, Match).
-    *   **Individuals**: Specific instances of classes (e.g., 'Player_A', 'Team_X').
-    *   **Object Properties**: Relationships between individuals of classes (e.g., 'playsFor' connecting a Player to a Team).
-    *   **Data Properties**: Attributes of individuals that take literal values (e.g., a Player's 'dateOfBirth').
-    *   **SWRL Rules**: (Semantic Web Rule Language) rules that can infer new knowledge from the existing ontology data.
+    *   **Classes**: General concepts or categories (e.g., `#FootballTeam`, `#Player`, `#Coach`, `#Stadium`, `#Position`).
+    *   **Individuals**: Specific instances of classes (e.g., `#LiverpoolFC` which is a `#FootballTeam`; `#MohamedSalah` which is a `#Player`; `#Forward` which is a `#Position`).
+    *   **Object Properties**: Relationships between individuals of classes (e.g., `#hasPlayer` linking `#FootballTeam` to `#Player`; `#hasPosition` linking `#Player` to `#Position`).
+    *   **Data Properties**: Attributes of individuals that take literal values (e.g., a `#FootballTeam` has a `#teamName` like "Liverpool FC"; a `#Player` has a `#playerName` like "Mohamed Salah" and a `#playerAge`).
+    *   **Axioms/Restrictions (acting like rules)**: Constraints or definitions, for example, a `#FootballTeam` must have at least one player (`owl:minCardinality` on `#hasPlayer`), and a `#Player` must have exactly one position (`owl:cardinality` on `#hasPosition`). While this file doesn't use explicit SWRL syntax, these OWL axioms serve a similar purpose in defining the ontology's logic.
 
 *   **`README.md`**: This file (the one you are currently reading). It provides a general overview of the project, its main functionalities, system requirements, and instructions on how to build and run the application.
